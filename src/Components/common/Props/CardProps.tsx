@@ -1,14 +1,17 @@
-import React from 'react'
-import pic from "../../../assets/card1.jpg"
+import React from "react";
+import pic from "../../../assets/card1.jpg";
 import { BsArrowRight } from "react-icons/bs";
 
-const CardProps = () => {
+interface ImagesCard {
+  childPic: string;
+}
 
-  const [show,setShow] = React.useState(false)
+const CardProps: React.FC<ImagesCard> = ({ childPic }) => {
+  const [show, setShow] = React.useState(false);
 
-  const toggleshow = ()=>{
-   setShow(!show)
-  }
+  const toggleshow = () => {
+    setShow(!show);
+  };
 
   return (
     <div
@@ -31,7 +34,7 @@ const CardProps = () => {
         {/* imgae card */}
         <div className=" rounded-[10px] max-sm:w-full ">
           <img
-            src={pic}
+            src={childPic}
             alt=""
             className={`w-[100%] h-[100%] object-cover rounded-[10px] outline-none  ${
               show ? "" : null
@@ -56,6 +59,6 @@ const CardProps = () => {
       </div>
     </div>
   );
-}
+};
 
-export default CardProps
+export default CardProps;

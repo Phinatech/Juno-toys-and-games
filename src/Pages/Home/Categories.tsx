@@ -1,5 +1,9 @@
 import { Category } from "../../Components";
 import CardProps from "../../Components/common/Props/CardProps";
+import pic1 from "../../assets/card1.jpg";
+import pic2 from "../../assets/card2.jpg";
+import pic3 from "../../assets/card3.jpg";
+import pic4 from "../../assets/card4.jpg";
 
 const Categories = () => {
   return (
@@ -12,10 +16,10 @@ const Categories = () => {
           />
         </div>
         <div className="grid gap-4 place-items-center grid-cols-4 max-sm:grid-cols-1 max-xl:grid-cols-2">
-          <CardProps />
-          <CardProps />
-          <CardProps />
-          <CardProps />
+          <CardProps childPic={pic1} />
+          <CardProps childPic={pic2} />
+          <CardProps childPic={pic3} />
+          <CardProps childPic={pic4} />
         </div>
       </div>
     </div>
