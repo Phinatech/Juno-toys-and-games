@@ -4,10 +4,10 @@ import { PiSealCheckBold } from "react-icons/pi";
 
 const Testimonies = () => {
   return (
-    <div className=" w-[100%] gap-3 flex mt-[30px] flex-wrap justify-center items-center">
+    <div className=" w-[100%] gap-3 flex mt-[30px] flex-wrap justify-center items-center  max-sm:justify-normal">
       {/* card */}
       <div className="w-[300px] h-[100px] bg-white border-[black] border-r-2  flex items-center justify-start m-[20px] max-sm:border-none">
-        <div className="mr-3 text-[60px] ">
+        <div className="mr-3 text-[60px]  ">
           <IoStorefrontOutline />
         </div>
         <div>
@@ -16,7 +16,7 @@ const Testimonies = () => {
         </div>
       </div>
       {/* card2 */}
-      <div className="w-[300px] h-[100px] bg-white border-[black] border-r-2  flex items-center justify-start m-[20px] max-sm:border-none">
+      <div className="w-[300px] h-[100px] bg-white border-[black] border-r-2  flex items-center justify-start m-[20px] max-sm:border-none md:border-none">
         <div className="text-[60px] mr-3 ">
           <PiSealCheckBold />
         </div>
