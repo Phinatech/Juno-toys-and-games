@@ -7,6 +7,8 @@ const Homescreen = () => {
       <Hero />
       <br />
       <Categories />
+      <br />
+      <br />
       <Testimonies />
     </div>
   );

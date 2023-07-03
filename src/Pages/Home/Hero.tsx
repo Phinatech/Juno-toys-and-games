@@ -17,7 +17,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className=" w-[full] rotate-180 absolute top-[30px] animate-bounce duration-1000">
+        <div className=" w-[full] rotate-180 absolute top-[30px] animate-bounce delay-1000">
           <img src={pic} alt="" />
         </div>
       </div>

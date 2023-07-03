@@ -7,6 +7,7 @@ const HomeLayouts = () => {
     <div>
       <Headers />
       <Outlet />
+      <br />
       <Footer />
     </div>
   );
