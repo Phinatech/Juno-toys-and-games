@@ -1,5 +1,5 @@
 import React from "react";
-import pic from "../../../assets/card1.jpg";
+
 import { BsArrowRight } from "react-icons/bs";
 
 interface ImagesCard {
