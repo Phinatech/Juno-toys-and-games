@@ -32,13 +32,15 @@ const CardProps: React.FC<ImagesCard> = ({ childPic }) => {
         ></div>
 
         {/* imgae card */}
-        <div className=" rounded-[10px] max-sm:w-full ">
+        <div className=" rounded-[10px] max-sm:w-full object-contain hover:scale-110 transition duration-300 ease-in-out">
           <img
             src={childPic}
             alt=""
-            className={`w-[100%] h-[100%] object-cover rounded-[10px] outline-none  ${
-              show ? "" : null
-            } `}
+            loading="lazy"
+            // className={`w-[100%] h-[100%]  rounded-[10px] outline-none object-contain hover:scale-110 transition duration-300 ease-in-out  ${
+            //   show ? "" : null
+            // } `}
+            className="w-[100%] h-[100%] object-contain  rounded-[10px]"
           />
 
           {/*Hovering buttons  */}

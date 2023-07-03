@@ -3,12 +3,12 @@ import pic from "../../assets/heroCloud.png";
 const Hero = () => {
   return (
     <div className="w-full flex justify-center bg-hero min-h-[75vh] bg-center bg-no-repeat bg-cover  relative items-center overflow-hidden">
-      <div className="flex  w-[90%] h-[fit-content] ">
-        <div className=" z-[10] ml-[100px]  w-[450px] font-font gap-6 flex flex-col ">
-          <div className="text-[50px] leading-[1.2] font-semibold ">
+      <div className="flex  w-[95%] ">
+        <div className=" z-[10]  w-[450px] max-sm:w-[80%s] font-font gap-6 flex flex-col ">
+          <div className="text-[50px] leading-[1.2] font-semibold max-sm:text-[30px] max-sm:text-[white]">
             Pick the best toy for your kid
           </div>
-          <div className="text-[16px]">
+          <div className="text-[16px] max-sm:text-[14px]">
             we offer a prenium service,whether you are shopping at one of our
             flagship stores or via our website!
           </div>
@@ -17,7 +17,7 @@ const Hero = () => {
           </button>
         </div>
 
-        <div className=" w-[100%] rotate-180 absolute top-[30px] animate-bounce">
+        <div className=" w-[100%] rotate-180 absolute top-[30px] animate-bounce duration-1000">
           <img src={pic} alt="" />
         </div>
       </div>
